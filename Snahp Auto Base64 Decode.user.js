@@ -5,6 +5,10 @@
 // @version     1.0.0
 // @include     /^https:\/\/forum\.snahp\.it\/viewtopic\.php\?\/*/
 // @icon        https://forum.snahp.it/favicon.ico
+// @homepage    https://github.com/Bilibox/Snahp-Auto-Base64-Decode
+// @supportURL  https://github.com/Bilibox/Snahp-Auto-Base64-Decode/issues/
+// @updateURL   https://github.com/Bilibox/Snahp-Auto-Base64-Decode/raw/main/Snahp%20Auto%20Base64%20Decode.user.js
+// @downloadURL https://github.com/Bilibox/Snahp-Auto-Base64-Decode/raw/main/Snahp%20Auto%20Base64%20Decode.user.js
 // @match       none
 // @grant       none
 // @run-at      document-end
