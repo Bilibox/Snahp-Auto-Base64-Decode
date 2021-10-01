@@ -36,7 +36,7 @@ function ResultsPush(encoded, decoded) {
     results.push(`<br>Encoded Base64: ${encoded} <br>Decoded Base64: <a href='${decoded}' class='postlink'>${decoded}</a>`)
 }
 
-function Base64Testing(child, current) {
+function Base64Testing(child) {
     const base64Regex = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/g;
     if (child.nodeValue.match(/(\r\n|\n|\r|\s)/gm)) {
         var wasDecoded = false;
@@ -81,8 +81,10 @@ function CustomRecursiveTreeWalker() {
             var child = current.childNodes[i];
             if (child.nodeType == 3) {
                 try {
-                    Base64Testing(child, current)
-                } catch (e) {}
+                    Base64Testing(child)
+                } catch (e) {
+                    console.error(e)
+                }
             }
             else {
                 findTextNodes(child);
